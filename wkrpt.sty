@@ -1,0 +1,132 @@
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{url}
+
+\onehalfspacing
+\pagenumbering{roman}
+\addtolength{\parskip}{\baselineskip}
+\setlength{\parindent}{12pt}
+\setlength{\parskip}{1em}
+
+
+\renewcommand{\title}[3] {
+	\begin{singlespace}
+	\begin{center}
+	{\bf \MakeUppercase {University of Waterloo}} \\
+	{\bf Faculty of Engineering}
+
+	\vfill
+
+	{
+		\large
+		\textsc{\bf {#1}}
+	}
+
+	\vfill
+
+	#2
+
+	\vfill
+
+	#3
+
+	\end{center}
+	\end{singlespace}
+
+	\thispagestyle{empty}
+	\newpage
+}
+
+\newcommand{\letter}[9] {
+	\begin{singlespace}
+
+	#5
+
+	\noindent
+	\today
+
+	\noindent
+	Joanne Atley, Director\\
+	Software Engineering Program\\
+	University of Waterloo\\
+	200 University Ave. West\\
+	Waterloo, Ontario. N2L 3G1
+
+	\vfill
+
+	\noindent
+	Dear Joanne Atley:\\
+
+	This report, entitled "#1", was prepared during my #2 work term at #3, where I worked in the #4 department.\\
+
+	#6\\
+
+	#7\\
+
+	#8\\
+
+	I hereby confirm that I have received no help, other than what is mentioned above, in writing this report. I also confirm this report has not been previously submitted for academic credit at this or any other academic institution.
+
+	\vfill
+
+	\noindent
+	Yours,\\
+
+	\vfill
+
+	\noindent
+	\line(1,0){150}\\
+	#9\\
+
+	\end{singlespace}
+
+	\thispagestyle{empty}
+	\newpage
+}
+
+\newcommand{\tocsection}[1]{ 
+	\section*{#1}
+	\addcontentsline{toc}{section}{#1}
+}
+
+\renewcommand{\contentsname}{\begin{center}Table of Contents\end{center}}
+\newcommand{\toc} {
+	\tableofcontents
+	\addcontentsline{toc}{section}{Table of Contents}
+	\cleardoublepage
+}
+
+\renewcommand{\listfigurename}{\begin{center}List of Figures\end{center}}
+\newcommand{\lof} {
+	\listoffigures
+	\addcontentsline{toc}{section}{List of Figures}
+	\newpage
+}
+
+\renewcommand{\listtablename}{\begin{center}List of Tables\end{center}}
+\newcommand{\lot} {
+	\listoftables
+	\addcontentsline{toc}{section}{List of Tables}
+	\newpage
+}
+
+\renewcommand{\refname}{References}
+
+\renewcommand{\appendix}[2]{
+	\setcounter{page}{1}
+	\renewcommand{\thepage}{A-#1.\arabic{page}}
+	\section*{Appendix #1 \- #2}
+	\addcontentsline{toc}{section}{#2}
+}
+
+\renewcommand{\cftsecleader}{\bfseries\cftdotfill{\cftdotsep}}
+
+\renewcommand{\cftfigpresnum}{Figure }
+\renewcommand{\cftfignumwidth}{55pt}
+\renewcommand{\cftfigaftersnum}{: }
+
+\renewcommand{\cfttabpresnum}{Table }
+\renewcommand{\cfttabnumwidth}{50pt}
+\renewcommand{\cfttabaftersnum}{: }
