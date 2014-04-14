@@ -13,7 +13,7 @@ Usage
 
 Write your report in wkrpt.tex and the Makefile will auto-generate your completed document in the build directory.
 
-If you don't have GNU Make because you're lame and run Windoze, this project can also be built with any standard LaTeX build system.
+If you don't have GNU Make because you're lame and run Windows, this project can also be built with any standard LaTeX build system.
 
 
 LaTeX Dependencies
