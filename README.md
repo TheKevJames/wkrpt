@@ -13,7 +13,7 @@ Usage
 
 Write your report in wkrpt.tex and the Makefile will auto-generate your completed document in the build directory.
 
-If you don't have GNU Make because you're lame and run Windoze, this project can also be built with any standard LaTeX build system.
+If you don't have GNU Make because you're lame and run Windoze, this project can also be built with any standard XeLaTeX build system.
 
 
 LaTeX Dependencies
@@ -21,6 +21,7 @@ LaTeX Dependencies
 
 If you find yourself unable to build, make sure you have the following latex packages installed. Missing LaTeX packages can be found on [CTAN](http://www.ctan.org/).
 
+    fontspec
     geometry
     graphicx
     setspace
