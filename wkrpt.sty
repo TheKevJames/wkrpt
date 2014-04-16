@@ -10,7 +10,12 @@
 \addtolength{\parskip}{\baselineskip}
 \setlength{\parindent}{12pt}
 \setlength{\parskip}{1em}
-\setmainfont{Times New Roman}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\fontsize{16}{18}\bfseries}
+\titleformat*{\subsection}{\fontsize{14}{16}\bfseries}
+\titleformat*{\subsubsection}{\fontsize{12}{14}\bfseries}
 
 
 \renewcommand{\title}[3] {

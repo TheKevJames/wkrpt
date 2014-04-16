@@ -27,7 +27,7 @@ If you find yourself unable to build, make sure you have the following latex pac
     setspace
     tocloft
     url
-
+    titlesec
 
 Contributing
 ============
