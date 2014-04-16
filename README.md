@@ -15,6 +15,27 @@ Write your report in wkrpt.tex and the Makefile will auto-generate your complete
 
 If you don't have GNU Make because you're lame and run Windoze, this project can also be built with any standard XeLaTeX build system.
 
+BibTeX
+======
+
+Many online journals or databases allow you to download citations in BibTeX format.  This provides metadata that will be automagically formatted to whatever citation style you choose.  The style package for IEEE can be found [here](http://ctan.cms.math.ca/tex-archive/macros/latex/contrib/IEEEtran/bibtex/IEEEtran.bst).  Install the package in your local *texmf* directory, the location of which will vary based on your OS, in a subfolder
+
+    bibtex/bst/
+
+Then simply add the following where you want your bibliography to go in your LaTeX document
+
+    \bibliographystyle{IEEEtran}
+    \bibliography{BIB_FILE_NAME}
+
+where **BIB\_FILE\_NAME** is the name of the .bib file with your citations in it.  To cite a reference use
+
+    \cite{CITATION_NAME}
+
+To build using BibTeX run the command
+
+    make bibtex
+
+For an introduction to BibTeX see [Using BibTeX: a short guide](http://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM)
 
 LaTeX Dependencies
 ==================
@@ -27,7 +48,7 @@ If you find yourself unable to build, make sure you have the following latex pac
     setspace
     tocloft
     url
-
+    titlesec
 
 Contributing
 ============
