@@ -12,7 +12,7 @@ Usage
 
 Write your report in wkrpt.tex and the Makefile will auto-generate your completed document.
 
-If you don't have GNU Make, this project can also be built with any standard XeLaTeX + BibLaTex build system. See the [Makefile](Makefile) for more information.
+If you don't have GNU Make, this project can also be built with any standard XeLaTeX + BibLaTeX build system. See the [Makefile](Makefile) for more information.
 
 LaTeX Dependencies
 ==================
