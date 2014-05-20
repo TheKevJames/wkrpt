@@ -29,6 +29,8 @@ If you find yourself unable to build, make sure you have the following latex pac
 
 You will also need the [IEEE BibTeX style package](http://ctan.cms.math.ca/tex-archive/macros/latex/contrib/IEEEtran/bibtex/IEEEtran.bst) installed in $TEXMF/bitex/bst/
 
+A guide for writing your `wkrpt.bib` file can be found [here](https://verbosus.com/bibtex-style-examples.html).
+
 Contributing
 ============
 
