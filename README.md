@@ -1,7 +1,7 @@
 wkrpt
 =====
 
-wkrpt is a LaTeX template for writing University of Waterloo Workterm Reports (for Software Engineers, at least!). It follows the guidelines found [here](https://uwaterloo.ca/software-engineering/current-undergraduate-students/policies-procedures-guidelines/work-term-report-guidelines).
+wkrpt is a LaTeX template for writing University of Waterloo Workterm Reports (for Software Engineers, at least!). It follows the guidelines found [here](https://uwaterloo.ca/software-engineering/current-undergraduate-students/policies-procedures-guidelines/work-term-report-guidelines). Latest term for which this template is verified to work: Fall 2015.
 
 Usage
 =====
